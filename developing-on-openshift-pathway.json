@@ -8,6 +8,11 @@
         "title": "Getting Started with OpenShift for Developers"
       },
       {
+        "external_link": "https://learn.openshift.com/developing/getting-started-mta/",
+        "course_id": "getting-started-mta",
+        "title": "Getting started with the OpenShift Migration Toolkit for Apps"
+      },
+      {
         "external_link": "https://learn.openshift.com/introduction/deploying-python/",
         "course_id": "deploying-python",
         "title": "Deploying Applications From Source"

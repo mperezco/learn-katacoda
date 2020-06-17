@@ -1,0 +1,48 @@
+{
+  "icon": "fa-openshift",
+  "title": "Getting started with the OpenShift Migration Toolkit for Apps",
+  "description": "",
+  "pathwayTitle": "OpenShift",
+  "difficulty": "beginner",
+  "time": "30 minutes",
+  "backend": {
+    "imageid": "openshift-4-2"
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "OpenShift Web Console",
+        "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uilayout": "terminal-iframe",
+    "uieditorpath": "/root/",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+  },
+  "details": {
+    "intro": {
+      "courseData": "env-init.sh",
+      "text": "00-intro.md",
+      "code": "set-env.sh"
+    },
+    "steps": [
+      {
+        "title": "Prepare for Exercises",
+        "text": "01-prepare.md"
+      },
+      {
+        "title": "Example 2",
+        "text": "01-prepare.md"
+      }
+    ],
+    "finish": {
+      "text": "99-outro.md"
+    },
+    "assets": {
+      "client": [
+        { "file": "01-prepare/serving.yaml", "target": "~/01-prepare" }
+      ]
+    }
+  }  
+}
