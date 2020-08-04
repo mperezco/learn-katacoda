@@ -41,7 +41,7 @@
     },
     "assets": {
       "client": [
-        { "file": "web-template-empty-dir-executor.json", "target": "/var/tmp/web-template-empty-dir-executor.json" }
+        { "file": "web-template-empty-dir-executor.json", "target": "/var/tmp/" }
       ]
     }
   }  
