@@ -41,8 +41,8 @@
     },
     "assets": {
       "client": [
-        { "file": "web-template-empty-dir-executor.json", "target": "/var/tmp/" }
-        { "file": "deployment.properties", "target": "/var/tmp/" }
+        { "file": "web-template-empty-dir-executor.json", "target": "/var/tmp/" },
+        { "file": "deployment.properties", "target": "/var/tmp/" },
         { "file": "deploy.sh", "target": "/var/tmp/" }
       ]
     }
