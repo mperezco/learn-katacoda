@@ -39,6 +39,12 @@
         "title": "Transferring Files in and out of Containers"
       },
       {
+        "external_link": "https://learn.openshift.com/introduction/getting-started-mta/",
+        "pathway_id": "introduction",
+        "course_id": "getting-started-mta",
+        "title": "Getting started with the OpenShift Migration Toolkit for Apps"
+      },
+      {
         "external_link": "https://learn.openshift.com/developing-on-openshift/helm/",
         "course_id": "helm",
         "title": "Getting Started with Helm 3 on OpenShift"

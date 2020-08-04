@@ -43,6 +43,11 @@
       "title": "Transferring Files in and out of Containers"
     },
     {
+      "external_link": "https://learn.openshift.com/introduction/getting-started-mta/",
+      "course_id": "getting-started-mta",
+      "title": "Getting started with the OpenShift Migration Toolkit for Apps"
+    },
+    {
       "external_link": "https://learn.openshift.com/introduction/federated-clusters/",
       "course_id": "federated-clusters",
       "title": "Introduction to Federated Clusters with Kubefed"
