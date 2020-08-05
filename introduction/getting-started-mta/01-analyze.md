@@ -20,21 +20,21 @@ For this lab, we will use the Web Console on top of OpenShift Container Platform
 
 To get started, [access the Migration Toolkit for Applications]({{ MTA_URL }}){:target="_blank"} and log in using the username and password you've been assigned (e.g. `{{ CHE_USER_NAME }}/{{ CHE_USER_PASSWORD }}`):
 
-![MTA Login]({% image_path mta_login.png %})
+![MTA Login](./../assets/introduction/getting-started-mta/mta_login.png)
 
 
 ####2. Create a new project
 
 ---
 
-![MTA Landing Page]({% image_path mta_landing_page.png %})
+![MTA Landing Page](./../assets/introduction/getting-started-mta/mta_landing_page.png)
 
 Input a name and description to create a project.
 
   * Name: `jboss-eap-migration`
   * Description: `JBoss EAP Migration Project`
   
-![MTA Create Project]({% image_path mta_create_project.png %})
+![MTA Create Project](./../assets/introduction/getting-started-mta/mta_create_project.png)
 
 ####3. Add the monolith application to the project
 
@@ -44,7 +44,7 @@ Select `Server Path` to analyze a monolithic application:
 
  * Server Path: `/opt/apps`
 
-![MTA Add App]({% image_path mta_add_monolith_app1.png %})
+![MTA Add App](./../assets/introduction/getting-started-mta/mta_add_monolith_app1.png)
 
 ####4. Select “Migration to JBoss EAP 7” in Transformation Path
 
@@ -54,11 +54,11 @@ Choose the `com` and `weblogic` checkboxes to include these packages during anal
 
  * Check `com, weblogic` for Included packages.
 
-![MTA Add App]({% image_path mta_check_monolith_app.png %})
+![MTA Add App](./../assets/introduction/getting-started-mta/mta_check_monolith_app.png)
 
  `Tip`: This page may look just like an OpenShift console page, its not, its the Red Hat Application Migration Toolkit console - both project use [PatternFly](https://www.patternfly.org){:target="_blank"} for a consistent web look and feel.
 
-![MTA Add App]({% image_path mta_check_monolith_app.png %})
+![MTA Add App](./../assets/introduction/getting-started-mta/mta_check_monolith_app.png)
 
   * Click `Save & Run`
 
@@ -68,7 +68,7 @@ Choose the `com` and `weblogic` checkboxes to include these packages during anal
 
 **Click the `#1` link (or `#2`) to see the report:
 
-![MTA Complete]({% image_path mta_complete_analysis.png %})
+![MTA Complete](./../assets/introduction/getting-started-mta/mta_complete_analysis.png)
 
 ####6. Review the report
 
@@ -76,13 +76,13 @@ Choose the `com` and `weblogic` checkboxes to include these packages during anal
 
 You should see the landing page for the report:
 
-![MTA Langing Page]({% image_path mta_result_landing_page.png %})
+![MTA Langing Page](./../assets/introduction/getting-started-mta/mta_result_landing_page.png)
 
 The main landing page of the report lists the applications that were processed. Each row contains a high-level overview of the story points, number of incidents, and technologies encountered in that application.
 
 Click on the `monolith.war` link to access details for the project:
 
-![MTA Project Overview]({% image_path mta_project_overview.png %})
+![MTA Project Overview](./../assets/introduction/getting-started-mta/mta_project_overview.png)
 
 ####7. Understanding the report
 

@@ -12,15 +12,15 @@ You will be using Red Hat CodeReady Workspaces, an online IDE based on [Eclipe C
 
 To get started, [access the Che instance]({{ ECLIPSE_CHE_URL }}){:target="_blank"} and log in using the username and password you've been assigned (e.g. `{{ CHE_USER_NAME }}/{{ CHE_USER_PASSWORD }}`):
 
-![cdw]({% image_path che-login.png %})
+![cdw](./../assets/introduction/getting-started-mta/che-login.png)
 
 Once you log in, you'll be placed on your personal dashboard. We've pre-created workspaces for you to use. Click on the name of the pre-created workspace on the left, as shown below (the name will be different depending on your assigned number). You can also click on the name of the workspace in the center, and then click on the green button that says "OPEN" on the top right hand side of the screen:
 
-![cdw]({% image_path che-precreated.png %})
+![cdw](./../assets/introduction/getting-started-mta/che-precreated.png)
 
 After a minute or two, you'll be placed in the workspace:
 
-![cdw]({% image_path che-workspace.png %})
+![cdw](./../assets/introduction/getting-started-mta/che-workspace.png)
 
 > **NOTE**:
 >
@@ -28,7 +28,7 @@ After a minute or two, you'll be placed in the workspace:
 
 To gain extra screen space, click on the yellow arrow to hide the left menu (you won't need it):
 
-![cdw]({% image_path che-realestate.png %})
+![cdw](./../assets/introduction/getting-started-mta/che-realestate.png)
 
 Users of Eclipse, IntelliJ IDEA or Visual Studio Code will see a familiar layout: a project/file browser on the left, a code editor on the right, and a terminal at the bottom. You'll use all of these during the course of this workshop, so keep this browser tab open throughout. **If things get weird, you can simply reload the browser tab to refresh the view.**
 
@@ -39,11 +39,11 @@ In the project explorer pane, click on the `Import Projects...` and enter the fo
   * Check `Import recursively (for multi-module projects)`
   * Name: `cloud-native-workshop-v2m1-labs`
 
-![codeready-workspace-import]({% image_path codeready-workspace-import.png %}){:width="700px"}
+![codeready-workspace-import](./../assets/introduction/getting-started-mta/codeready-workspace-import.png){:width="700px"}
 
 At the next screen, leave the project type set to `Blank` and click **Save**.
 
-![codeready-workspace-import-save]({% image_path codeready-workspace-import-save.png %}){:width="700px"}
+![codeready-workspace-import-save](./../assets/introduction/getting-started-mta/codeready-workspace-import-save.png){:width="700px"}
 
 The project is imported into your workspace and is visible in the project explorer.
 
@@ -51,21 +51,21 @@ The project is imported into your workspace and is visible in the project explor
 
 Expand the top-level project and look carefully at the icons next to each of the `monolith`, `catalog` and `inventory` directories. **Do you see a blue Maven icon as shown below?**
 
-![maven-icon]({% image_path maven-icon.png %}){:width="900px"}
+![maven-icon](./../assets/introduction/getting-started-mta/maven-icon.png){:width="900px"}
 
 If you do **not** see these icons, then you'll need to right-click on each of the projects, and select "Convert to Project" and convert them to the _Maven_ type project as shown below:
 
-![codeready-workspace-convert]({% image_path codeready-workspace-convert.png %}){:width="500px"}
+![codeready-workspace-convert](./../assets/introduction/getting-started-mta/codeready-workspace-convert.png){:width="500px"}
 
 Choose **Maven** from the project configurations and then click on **Save**.
 
-![codeready-workspace-maven]({% image_path codeready-workspace-maven.png %}){:width="700px"}
+![codeready-workspace-maven](./../assets/introduction/getting-started-mta/codeready-workspace-maven.png){:width="700px"}
 
 Be sure to do this for each of the `monolith`, `inventory` and `catalog` projects.
 
 > `NOTE`: the Terminal window in CodeReady Workspaces. For the rest of these labs, anytime you need to run a command in a terminal, you can use the CodeReady Workspaces Terminal window.
 
-![codeready-workspace-terminal]({% image_path codeready-workspace-terminal.png %})
+![codeready-workspace-terminal](./../assets/introduction/getting-started-mta/codeready-workspace-terminal.png)
 
 ####2. Review the issue related to `ApplicationLifecycleListener`
 
@@ -73,7 +73,7 @@ Be sure to do this for each of the `monolith`, `inventory` and `catalog` project
 
 Open the Issues report in the [MTA Console]({{ MTA_URL }}){:target="_blank"}:
 
-![mta_project_issues]({% image_path mta_project_issues.png %})
+![mta_project_issues](./../assets/introduction/getting-started-mta/mta_project_issues.png)
 
 MTA provides helpful links to understand the issue deeper and offer guidance for the migration.
 
@@ -139,12 +139,12 @@ public class StartupListener {
 
 Go to `Commands Palette` and dobule-click on `build` in CodeReady Workspaces:
 
-![mta_project_issues]({% image_path codeready-workspace-build.png %})
+![mta_project_issues](./../assets/introduction/getting-started-mta/codeready-workspace-build.png)
 
 If it builds successfully (you will see `BUILD SUCCESS`), then let's move on to the next issue! If it does not compile,
 verify you made all the changes correctly and try the build again.
 
-![mta_project_issues]({% image_path codeready-workspace-build-result.png %})
+![mta_project_issues](./../assets/introduction/getting-started-mta/codeready-workspace-build-result.png)
 
 In the next step, we will migrate some Weblogic-specific code in the app to use standard Java EE interfaces.
 
@@ -228,7 +228,7 @@ That one was pretty easy.
 
 Build and package the app using Maven to make sure you code still compiles via CodeReady Workspaces `BUILD` window:
 
-![mta_project_issues]({% image_path codeready-workspace-build.png %})
+![mta_project_issues](./../assets/introduction/getting-started-mta/codeready-workspace-build.png)
 
 If builds successfully (you will see `BUILD SUCCESS`), then let's move on to the next issue! If it does not compile,
 verify you made all the changes correctly and try the build again.
@@ -287,13 +287,13 @@ JBoss EAP's internal message queue implementation provided by [Apache ActiveMQ A
 The first step is to remove the unneeded `weblogic-ejb-jar.xml` file. This file is proprietary to Weblogic and not recognized or processed by JBoss
 EAP. Delete the file on Eclipse Navigator:
 
-![codeready-workspace-convert]({% image_path codeready-workspace-delete-jar.png %}){:width="500px"}
+![codeready-workspace-convert](./../assets/introduction/getting-started-mta/codeready-workspace-delete-jar.png){:width="500px"}
 
 While we're at it, let's remove the `stub weblogic implementation classes` added as part of the scenario.
 
 Right-click on the `weblogic` folder and select **Delete** to delete the folder:
 
-![codeready-workspace-convert]({% image_path codeready-workspace-delete-weblogic.png %}){:width="500px"}
+![codeready-workspace-convert](./../assets/introduction/getting-started-mta/codeready-workspace-delete-weblogic.png){:width="500px"}
 
 ####9. Fix the code
 
@@ -369,7 +369,7 @@ Your MDB should now be properly migrated to JBoss EAP.
 
 Build and package the app using Maven to make sure you code still compiles via CodeReady Workspaces `BUILD` window:
 
-![mta_project_issues]({% image_path codeready-workspace-build.png %})
+![mta_project_issues](./../assets/introduction/getting-started-mta/codeready-workspace-build.png)
 
 If builds successfully (you will see `BUILD SUCCESS`), then let's move on to the next issue! If it does not compile,
 verify you made all the changes correctly and try the build again.
@@ -382,15 +382,15 @@ In this step we will re-run the MTA report to verify our migration was successfu
 
 In the [MTA Console]({{ MTA_URL }}){:target="_blank"}, navigate to `Applications` on the left menu and click on `Add`. Enter the path to the fixed project at `/opt/solution` and click **Upload** to add the project:
 
-![mta_rerun_analysis_report]({% image_path mta_rerun_analysis_report_solution.png %})
+![mta_rerun_analysis_report](./../assets/introduction/getting-started-mta/mta_rerun_analysis_report_solution.png)
 
 Be sure to delete the old `monolith.war` to avoid analyzing it again:
 
-![mta_rerun_analysis_report]({% image_path mta_rerun_analysis_report_solution_del.png %})
+![mta_rerun_analysis_report](./../assets/introduction/getting-started-mta/mta_rerun_analysis_report_solution_del.png)
 
 and then click **Save and Run** to analyze the project:
 
-![mta_rerun_analysis_report]({% image_path mta_rerun_analysis_report.png %})
+![mta_rerun_analysis_report](./../assets/introduction/getting-started-mta/mta_rerun_analysis_report.png)
 
 Depending on how many other students are running reports, your analysis might be _queued_ for several minutes. If it is taking too long, feel free to skip the next section and proceed to step **13** and return back to the analysis later to confirm that you eliminated all the issues.
 
@@ -403,7 +403,7 @@ Click on the lastet result to go to the report web page and verify that it now r
 You have successfully migrated
 this app to JBoss EAP, congratulations!
 
-![mta_project_issues_story]({% image_path mta_project_issues_story.png %})
+![mta_project_issues_story](./../assets/introduction/getting-started-mta/mta_project_issues_story.png)
 
 Now that we've migrated the app, let's deploy it and test it out and start to explore some of the features that JBoss EAP
 plus Red Hat OpenShift bring to the table.
@@ -447,7 +447,7 @@ At the `<!-- TODO: Add OpenShift profile here -->` we are going to add a the fol
 
 First, open a new brower with the [OpenShift web console]({{ CONSOLE_URL}}){:target="_blank"}
 
-![openshift_login]({% image_path openshift_login.png %})
+![openshift_login](./../assets/introduction/getting-started-mta/openshift_login.png)
 
 Login using:
 
@@ -462,13 +462,13 @@ Login using:
 >
 > Click on `Advanced` then, you can access the HTTPS page when you click on `Proceed to...`!!!
 >
-> ![warning]({% image_path browser_warning.png %})
+> ![warning](./../assets/introduction/getting-started-mta/browser_warning.png)
 >
 > Other browsers have similar procedures to accept the security exception.
 
 You will see the OpenShift landing page:
 
-![openshift_landing]({% image_path openshift_landing.png %})
+![openshift_landing](./../assets/introduction/getting-started-mta/openshift_landing.png)
 
 > The project displayed in the landing page depends on which labs you will run today. If you will develop `Service Mesh and Identity` then you will see pre-created projects as the above screeenshot.
 
@@ -480,11 +480,11 @@ Click `Create Project`, fill in the fields, and click `Create`:
 
 > NOTE: YOU `MUST` USE `userXX-coolstore-dev` AS THE PROJECT NAME, as this name is referenced later on and you will experience failures if you do not name it `userXX-coolstore-dev`!
 
-![create_dialog]({% image_path create_dialog.png %}){:width="700px"}
+![create_dialog](./../assets/introduction/getting-started-mta/create_dialog.png){:width="700px"}
 
 This will take you to the project status. There's nothing there yet, but that's about to change.
 
-![create_new]({% image_path create_new.png %})
+![create_new](./../assets/introduction/getting-started-mta/create_new.png)
 
 ####15. Deploy the monolith
 
@@ -532,12 +532,12 @@ Then open up the `userXX-coolstore-dev` project status page at [OpenShift web co
 
 and verify the monolith template items are created:
 
-![no_deployments]({% image_path no_deployments.png %})
+![no_deployments](./../assets/introduction/getting-started-mta/no_deployments.png)
 
 You can see the components being deployed on the
 Project Status, but notice the `No running pod for Coolstore`. When you click on `coolstore DC`(Deployment Configs), you will see overview and resources.
 
-![no_deployments]({% image_path dc_overview.png %})
+![no_deployments](./../assets/introduction/getting-started-mta/dc_overview.png)
 
 You have not yet deployed the container image built in previous steps, but you'll do that next.
 
@@ -573,7 +573,7 @@ thanks to the *DeploymentConfig* object created from the template:
 
 When you navigate `Builds` menu, you will find out `coolstore-xx` is `running` in Status field:
 
-![building]({% image_path building.png %})
+![building](./../assets/introduction/getting-started-mta/building.png)
 
 Wait for the build and deploy to complete:
 
@@ -586,17 +586,17 @@ You should eventually see `replication controller "coolstore-1" successfully rol
 
 When it's done you should see the application deployed successfully.
 
-![build_done]({% image_path build_done.png %})
+![build_done](./../assets/introduction/getting-started-mta/build_done.png)
 
 Test the application by clicking on the Route link at `Networking > Routes` on the left menu:
 
-![route_link]({% image_path route_link.png %})
+![route_link](./../assets/introduction/getting-started-mta/route_link.png)
 
 #####Congratulations!
 
 Now you are using the same application that we built locally on OpenShift. That wasn't too hard right?
 
-![coolstore_web]({% image_path coolstore_web.png %})
+![coolstore_web](./../assets/introduction/getting-started-mta/coolstore_web.png)
 
 In the next step you'll explore more of the developer features of OpenShift in preparation for moving the
 monolith to a microservices architecture later on. Let's go!
