@@ -76,7 +76,7 @@ Choose the `com` and `weblogic` checkboxes to include these packages during anal
 
 You should see the landing page for the report:
 
-![MTA Langing Page](../../assets/introduction/getting-started-mta/mta_result_landing_page.png)
+![MTA Langing Page](../../../assets/introduction/getting-started-mta/mta_result_landing_page.png)
 
 The main landing page of the report lists the applications that were processed. Each row contains a high-level overview of the story points, number of incidents, and technologies encountered in that application.
 
