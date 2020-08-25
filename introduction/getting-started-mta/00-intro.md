@@ -1,7 +1,7 @@
 [migration-main]: https://www.openshift.com/learn/topics/migration
 [rhamt-docs]: https://developers.redhat.com/products/rhamt/overview
 
-Migration Toolkit for Applications env 0.7
+Migration Toolkit for Applications env 0.8
 
 In this self-paced tutorial, you will learn the basics of how to use Migration Toolkit for Applicationsi (MTA), which provides a capability to anaylze Java code, and binaries, in order to make them suitable for open source platforms (such as Tomcat or JBoss EAP), operating systems (Linux), JDKs (OpenJDK) and containers.
 
